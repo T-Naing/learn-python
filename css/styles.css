@@ -11,11 +11,12 @@ body{
 	border:0;
 }
 #logo-img {
-	background: url('/images/python-logo-generic.svg') no-repeat;/*python-logo-only.png' python-logo-generic.svg*/
+	background: url('../images/python-logo-generic.svg') no-repeat;/*python-logo-only.png' python-logo-generic.svg*/
 		width: 350px;
 		height: 100px;
 		margin: 10px 15px 10px 0;
 		background-size: contain; /*update*/
+
 	}
 	.navbar-brand{
 		padding-top: 25px;
