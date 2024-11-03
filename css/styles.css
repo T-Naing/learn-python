@@ -9,6 +9,7 @@ body{
 	background-color: #333333;
 	border-radius: 0;
 	border:0;
+	padding-left: 30px;/*update*/
 }
 #logo-img {
 	background: url('../images/python-logo-generic.svg') no-repeat;
