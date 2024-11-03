@@ -1,0 +1,231 @@
+body{
+	font-size: 18px;/*update*/
+	color:#333333 ;
+	background-color: #F5F5F5;
+	font-family: "Roboto", serif;
+	line-height: 1.6; /*update*/
+}
+#header-nav{
+	background-color: #333333;
+	border-radius: 0;
+	border:0;
+}
+#logo-img {
+	background: url('/images/python-logo-generic.svg') no-repeat;/*python-logo-only.png' python-logo-generic.svg*/
+		width: 350px;
+		height: 100px;
+		margin: 10px 15px 10px 0;
+		background-size: contain; /*update*/
+	}
+	.navbar-brand{
+		padding-top: 25px;
+	}
+/*.navbar-brand h1{
+	font-family: "Montserrat", sans-serif;
+	color:#FFFFFF;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bolder;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}*/
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+#nav-list{
+	margin-top: 10px;
+/*	margin-top:50px;/*update*/
+}
+#nav-list a{
+	color:#FFFFFF;
+	text-align: center;
+}
+#nav-list a:hover{
+	background-color: #306998;
+}
+#nav-list a span{
+/*	font-size: 1.8em;*/
+font-size: 1.5em;/*update*/
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 1px solid #F5F5F5;
+}
+.navbar-header button.navbar-toggle{
+	clear:both;
+	margin-top: -30px;
+}
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+	margin-top: 30px;
+	/*padding-top: 15px; /*35px;*/
+/*	padding-bottom: 35px;/*30px;*/
+	background-color:#FFD43B ;
+	border-top:0;
+	padding: 0px 0px 35px 0px;
+}
+.panel-footer div:nth-child(1){
+	background-color:#FFEB7D;
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.panel-footer hr{
+	margin-top: 0px;
+}
+footer a{
+	margin: 0 20px;
+	font-size: 1.2em;
+	color:#333333 ;
+}
+footer a:hover {
+	color:#333333 ;
+}
+#footer-note{
+/*	 font-family: "Courgette", cursive;*/
+/*	   font-family: "Indie Flower", cursive;*/
+/*	     font-family: "Caveat", cursive;*/
+font-family: "Gloria Hallelujah", cursive;
+color: #306998;
+font-size: .9em;
+
+}
+/* END FOOTER */
+/* CONTENT */
+h1, h2, h3 {
+  font-weight: bold; 
+}
+
+h1 {
+  font-size: 2.5em; /* Adjust as needed */
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+section h3 a{
+/*	color: #333333;*/
+color: #335566;
+}
+
+p {
+  font-size: 1em; /* Standard paragraph size */
+}
+
+#sec-note{
+/*	color: #27577b;*/
+	color: #335566;
+}
+#sec-note a,.sec>p>a,#a-email {
+  font-style: italic;
+}
+
+
+#note-title{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+#info-box{
+	margin-top: 20px;
+	position: relative;
+	border: 1px solid #333333;
+	margin-bottom: 20px;
+}
+
+#python-two-snakes{
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 50px;
+	height: 63px;
+}
+
+#h2-python{
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+}
+#p-quick-facts{
+	font-size: 1.1em;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* END CONTENT */
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	/* Header */
+	#logo-img {
+		background: url('../images/python-logo-generic.svg') no-repeat;
+		width: 300px;
+		height: 80px;
+		margin: 5px 5px 5px 0;
+		background-size: contain;
+	}
+
+	/* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	/* Header */
+	#logo-img {
+		background: url('../images/python-logo-generic.svg') no-repeat;
+		width: 300px;
+		height: 80px;
+		margin: 5px 5px 5px 0;
+		background-size: contain;
+	}
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	/* Header */
+	#logo-img {
+		background: url('../images/python-logo-generic.svg') no-repeat;
+		width: 300px;
+		height: 80px;
+		margin: 5px 5px 5px 0;
+		background-size: contain;
+	}
+/*  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }*/
+
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+  	font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+  	font-size: 1em;
+  	margin-right: 5px;
+  }
+
+  /*#call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }*/
+  /* End Header */
+}
