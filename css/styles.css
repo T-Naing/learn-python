@@ -9,7 +9,7 @@ body{
 	background-color: #333333;
 	border-radius: 0;
 	border:0;
-	padding-left: 30px;/*update*/
+/*	padding-left: 30px;/*update*/
 }
 #logo-img {
 	background: url('../images/python-logo-generic.svg') no-repeat;
@@ -93,7 +93,9 @@ footer a:hover {
 
 }
 /* END FOOTER */
+
 /* CONTENT */
+
 h1, h2, h3 {
 	font-weight: bold; 
 }
@@ -208,33 +210,15 @@ p {
   	font-size: 1em;
   	margin-right: 5px;
   }
-
-  /*#call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
-  }
-  #xs-deliver {
-    margin-top: 5px;
-    font-size: .7em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }*/
   /* End Header */
 
   /* About */
   #about-me{
   	width: 100% !important;
-/*  	margin-left: auto;*/
-/*  	margin-right: auto;*/
-/*  	background-color: gold;*/
   }
 
-  .image-container{
+  #image-container{
+/*  	width: 450px !important;*/
   	width: 450px !important;
   	height: 337px !important;
   }
@@ -252,16 +236,12 @@ p {
 #about-me h2{
 	text-align: center;
 }
-.image-container{
+
+#image-container{
 	width: 600px;
 	height: 450px;
-/*	border: 1px solid gray;*/
+	background: url('../images/town-view.jpg') no-repeat;
+	background-size: contain;
 	margin-left: auto;
 	margin-right: auto;
-
-}
-.image-container img{
-	width: 600px;
-	height: 450px;
-/*	background-size: contain;*/
 }
