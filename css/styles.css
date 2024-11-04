@@ -110,7 +110,7 @@ h3 {
 	font-size: 1.75em;
 }
 section h3 a{
-color: #335566;
+	color: #335566;
 }
 
 p {
@@ -118,7 +118,7 @@ p {
 }
 
 #sec-note{
-color: #335566;
+	color: #335566;
 }
 
 #sec-note a,.sec>p>a,#a-email {
@@ -200,10 +200,10 @@ color: #335566;
     height: 80px;
   }*/
 
-
   #collapsable-nav a { /* Collapsed nav menu text */
   	font-size: 1.2em;
   }
+
   #collapsable-nav a span { /* Collapsed nav menu glyph */
   	font-size: 1em;
   	margin-right: 5px;
@@ -225,4 +225,43 @@ color: #335566;
     text-transform: uppercase;
   }*/
   /* End Header */
+
+  /* About */
+  #about-me{
+  	width: 100% !important;
+/*  	margin-left: auto;*/
+/*  	margin-right: auto;*/
+/*  	background-color: gold;*/
+  }
+
+  .image-container{
+  	width: 450px !important;
+  	height: 337px !important;
+  }
+
+}
+
+/* About */
+#about-me{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+/*	border: 1px solid gray;*/
+	margin-bottom: 30px;
+}
+#about-me h2{
+	text-align: center;
+}
+.image-container{
+	width: 600px;
+	height: 450px;
+/*	border: 1px solid gray;*/
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.image-container img{
+	width: 600px;
+	height: 450px;
+/*	background-size: contain;*/
 }
