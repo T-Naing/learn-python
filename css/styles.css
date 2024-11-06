@@ -56,7 +56,7 @@ font-size: 1.5em;/*update*/
 }
 .navbar-header button.navbar-toggle{
 	clear:both;
-	margin-top: -30px;
+	margin-top: -50px; /*-30px; update by me to header space not to change in x-screen size*/
 }
 /* END HEADER */
 
@@ -157,19 +157,39 @@ p {
 	text-align: center;
 	font-weight: bold;
 }
+/* About */
+#about-me{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+/*	border: 1px solid gray;*/
+margin-bottom: 30px;
+}
+#about-me h2{
+	text-align: center;
+}
 
+#image-container{
+	width: 600px;
+	height: 450px;
+	background: url('../images/town-view.jpg') no-repeat;
+	background-size: contain;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* END About */
 /* END CONTENT */
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 	/* Header */
-	#logo-img {
+/*	#logo-img {
 		background: url('../images/python-logo-generic.svg') no-repeat;
 		width: 300px;
 		height: 80px;
 		margin: 5px 5px 5px 0;
 		background-size: contain;
-	}
+	}*/
 
 	/* End Header */
 }
@@ -184,6 +204,10 @@ p {
 		margin: 5px 5px 5px 0;
 		background-size: contain;
 	}
+/* About */
+#about-me{
+	width: 83%;
+}
 
 }
 
@@ -210,38 +234,24 @@ p {
   	font-size: 1em;
   	margin-right: 5px;
   }
-  /* End Header */
-
-  /* About */
-  #about-me{
-  	width: 100% !important;
-  }
-
-  #image-container{
-/*  	width: 450px !important;*/
-  	width: 450px !important;
-  	height: 337px !important;
-  }
-
+/*update by me*/
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, 
+.container>.navbar-collapse, .container>.navbar-header {
+	margin-right: 0; /* Reset the margin */
+	margin-left: 0;  /* Reset the margin */
+	/* Add any other desired styles here */
 }
+/* End Header */
 
 /* About */
 #about-me{
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-/*	border: 1px solid gray;*/
-	margin-bottom: 30px;
-}
-#about-me h2{
-	text-align: center;
+	width: 100%;
 }
 
 #image-container{
-	width: 600px;
-	height: 450px;
-	background: url('../images/town-view.jpg') no-repeat;
-	background-size: contain;
-	margin-left: auto;
-	margin-right: auto;
+/*  	width: 450px !important;*/
+width: 450px;
+height: 337px;
 }
+}
+
