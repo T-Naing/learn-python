@@ -159,24 +159,21 @@ p {
 	font-weight: bold;
 }
 /* About */
-#about-me{
-	width: 70%;
+#sec-about{
+	width:70%;
 	margin-left: auto;
 	margin-right: auto;
-/*	border: 1px solid gray;*/
-margin-bottom: 30px;
 }
+
 #about-me h2{
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 #image-container{
-	width: 600px;
-	height: 450px;
-	background: url('../images/town-view.jpg') no-repeat;
-	background-size: contain;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 40px;
+	box-shadow: 0 0 30px #333333;
+/*	border: 2px solid #333333;*/
 }
 /* END About */
 /* END CONTENT */
@@ -205,8 +202,9 @@ margin-bottom: 30px;
 		margin: 5px 5px 5px 0;
 		background-size: contain;
 	}
+
 /* About */
-#about-me{
+#sec-about{
 	width: 83%;
 }
 
@@ -239,20 +237,14 @@ margin-bottom: 30px;
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, 
 .container>.navbar-collapse, .container>.navbar-header {
 /*	margin-right: 0; /* Reset the margin */
-	margin-left: 0;  /* Reset the margin */
-	/* Add any other desired styles here */
+margin-left: 0;  /* Reset the margin */
+/* Add any other desired styles here */
 }
 /* End Header */
 
 /* About */
-#about-me{
+#sec-about{
 	width: 100%;
 }
 
-#image-container{
-/*  	width: 450px !important;*/
-width: 450px;
-height: 337px;
 }
-}
-
