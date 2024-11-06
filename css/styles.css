@@ -236,8 +236,8 @@ p {
 /*update by me*/
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, 
 .container>.navbar-collapse, .container>.navbar-header {
-/*	margin-right: 0; /* Reset the margin */
-margin-left: 0;  /* Reset the margin */
+	margin-right: 0;  /*Reset the margin */
+	margin-left: 0;  /* Reset the margin */
 /* Add any other desired styles here */
 }
 /* End Header */
