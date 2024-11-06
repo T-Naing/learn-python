@@ -53,7 +53,7 @@ font-size: 1.5em;/*update 1.5em of 18px*/
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
 	border: 1px solid #F5F5F5;
-/*	margin-right: 0px;/*update by me to navbar-toggole to align at right side*/
+	margin-right: 0px;/*update by me to navbar-toggole to align at right side*/
 }
 .navbar-header button.navbar-toggle{
 	clear:both;
