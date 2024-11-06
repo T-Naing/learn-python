@@ -48,11 +48,12 @@ body{
 	background-color: #306998;
 }
 #nav-list a span{
-/*	font-size: 1.8em;*/
-font-size: 1.5em;/*update*/
+/*	font-size: 1.8em;*/ /* glyphicon font-size */
+font-size: 1.5em;/*update 1.5em of 18px*/
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
 	border: 1px solid #F5F5F5;
+	margin-right: 0px;/*update by me to navbar-toggole to align at right side*/
 }
 .navbar-header button.navbar-toggle{
 	clear:both;
@@ -227,11 +228,11 @@ margin-bottom: 30px;
   }*/
 
   #collapsable-nav a { /* Collapsed nav menu text */
-  	font-size: 1.2em;
+  	font-size: 1.2em;/*1.2em of 18px */
   }
 
   #collapsable-nav a span { /* Collapsed nav menu glyph */
-  	font-size: 1em;
+  	font-size: 1em; /*1em of nav menu text */
   	margin-right: 5px;
   }
 /*update by me*/
