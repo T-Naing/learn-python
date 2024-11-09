@@ -2,7 +2,8 @@ body{
 	font-size: 18px;/*update*/
 	color:#333333 ;
 	background-color: #F5F5F5;
-	font-family: "Roboto", serif;
+	font-family: "Roboto", "Noto Sans Myanmar", serif;
+/*    font-family: "Arial", "Helvetica", "Times New Roman", sans-serif;*/
 	line-height: 1.6; /*update*/
 }
 #header-nav{
