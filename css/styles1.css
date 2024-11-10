@@ -19,10 +19,13 @@ line-height: 1.6; /*update*/
 	margin: 10px 15px 10px 0;
 	background-size: contain; /*update*/
 }
-/*.navbar-brand{
-	padding-top: 40px;/*update origin 25px*/
-/*}*/
 
+.navbar-brand { 
+/*	padding-top: 40px; */
+justify-content: center;
+display: flex; /* This aligns the items side by side */ 
+gap: 2px; /* Space between the links*/
+}
 /*.navbar-brand h1{
 	font-family: "Montserrat", sans-serif;
 	color:#FFFFFF;
@@ -34,15 +37,45 @@ line-height: 1.6; /*update*/
 	margin-bottom: 0;
 	line-height: .75;
 }*/
+.navbar-brand a:nth-child(1){
+	font-family: "Noto Sans Myanmar", serif;
+	font-size: 15px;
+}
+.navbar-brand a { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	text-decoration: none; 
+	padding: 10px; 
+	border-radius: 5px; 
+	border: 1px solid #FFD43B;
+	color: #333333; 
+	background-color: #FFFFFF;
+	transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
+	width: 50px; /* Set the width */ 
+	height: 35px; /* Set the height */
+	font-size: 16px;
+	box-shadow: 
+	0 4px 8px rgba(255, 255, 255, 0.3), /* Outer light shadow */ 
+	0 2px 4px rgba(0, 0, 0, 0.5);
+}
 
 .navbar-brand a:hover, .navbar-brand a:focus{
+	background-color: #FFD700;/*#34495E;/* Slightly darker gold on hover */
 	text-decoration: none;
+	color: #333333;
+	border-color: #306998;
+	box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4), /* Outer light shadow */ 
+	0 4px 8px rgba(0, 0, 0, 0.6);	
 }
 
 .navbar-brand a.active { 
 	background-color: #007BFF; 
-	color: #ffffff; }
-
+	border-color: #306998;
+	color: #FFFFFF; 
+	box-shadow:  0 8px 16px rgba(255, 255, 255, 0.5), /* Outer light shadow */ 
+	0 4px 8px rgba(0, 0, 0, 0.7);
+}
 
 #nav-list{
 	margin-top: 10px;
