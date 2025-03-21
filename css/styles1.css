@@ -100,6 +100,27 @@ font-size: 1.5em;/*update 1.5em of 18px*/
 	clear:both;
 	margin-top: -50px; /*-30px; update by me to header space not to change in x-screen size*/
 }
+
+/*.navbar-header .btn-group#ul-language{
+	display: inline-flex;
+	float: right;
+}*/
+
+/* Ensure the dropdown button is aligned properly */
+/*#language-dropdown {
+    position: absolute;
+    top: 50%;
+    right: 50px; /* Adjust this value as needed to get the exact position you want */
+    transform: translateY(-50%);
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 50%;
+    left: 15px; /* Adjust if needed to align toggle button with the logo */
+    transform: translateY(-50%);
+}*/
+
 /* END HEADER */
 
 /* FOOTER */

@@ -1,202 +1,311 @@
-body{
-	font-size: 18px;/*update*/
-	color:#333333 ;
+html {
+  font-size: 16px; /* 1rem root em*/
+}
+
+body {
+	color: #333333;
 	background-color: #F5F5F5;
 	font-family: "Roboto", "Noto Sans Myanmar", serif;
-/*    font-family: "Arial", "Helvetica", "Times New Roman", sans-serif;*/
-line-height: 1.6; /*update*/
+	line-height: 1.6;/* with font-size:16px*/
 }
-#header-nav{
+div.container-fluid{
+/*	background-color: #333333;*/
+padding-left: 50px;
+padding-right: 50px;
+}
+nav.navbar {
+	padding-top: 0;
+}
+
+/*.navbar-collapse */
+#navbarNav {
+	flex-grow: 0;
+	/*	text-align: center;*/
+}
+
+/*#header-nav*/
+nav .container-fluid {
 	background-color: #333333;
 	border-radius: 0;
-	border:0;
-/*	padding-left: 30px;/*update*/
+	border: 0;
 }
+
+.container-fluid a.p-2,
+.container-fluid div.p-2.navbar-brand {
+	padding-top: 5px !important;
+	padding-bottom: 0 !important;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+.container-fluid div.p-2.flex-grow-1 {
+	margin-right: 0;
+}
+
 #logo-img {
 	background: url('../images/python-logo-generic.svg') no-repeat;
 	width: 338px;
 	height: 100px;
-	margin: 10px 15px 10px 0;
-	background-size: contain; /*update*/
+/*	margin: 10px 0px 5px 0;*/
+	background-size: contain;
+	/*update*/
 }
-/*.navbar-brand{
-	padding-top: 40px;/*update origin 25px*/
-/*}*/
 
-/*.navbar-brand h1{
-	font-family: "Montserrat", sans-serif;
-	color:#FFFFFF;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	font-weight: bolder;
-	text-shadow: 1px 1px 1px #222;
+#globe {
+	color: #FFFFFF;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	font-size: 25px;
+}
+
+hr {
+	color: #FFFFFF;
 	margin-top: 0;
 	margin-bottom: 0;
-	line-height: .75;
-}*/
-
-.navbar-brand a:hover, .navbar-brand a:focus{
-	text-decoration: none;
 }
 
-.navbar-brand a.active { 
-	background-color: #007BFF; 
-	color: #ffffff; }
-
-
-#nav-list{
-	margin-top: 10px;
-/*	margin-top:50px;/*update*/
+#nav-list {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	/*	margin-top:50px;/*update*/
 }
-#nav-list a{
-	color:#FFFFFF;
+
+#nav-list li.nav-item a i {
+	/*home about icon*/
+	padding-right: 3px;
+	font-size: 25px;
+}
+#nav-list li.nav-item a {
+	/*	color: red;*/
+	color: #FFFFFF;
 	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
-#nav-list a:hover{
+#nav-list li.nav-item a:hover {
 	background-color: #306998;
+	text-decoration: underline;
+	color: #FFD43B;
 }
-#nav-list a span{
-/*	font-size: 1.8em;*/ /* glyphicon font-size */
-font-size: 1.5em;/*update 1.5em of 18px*/
+#nav-list li.nav-item a.nav-link.active {
+	text-decoration: underline;
+	color: #FFD43B;
 }
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-	border: 1px solid #F5F5F5;
-	margin-right: 0px;/*update by me to navbar-toggole to align at right side*/
+
+/*button.navbar-toggle button*/
+.navbar-toggler {
+    padding: 0.25rem 0.5rem; /* Adjusts the button's padding */
+    font-size: .8rem;/*0.75rem;      /* Adjusts the icon size */
+    line-height: 1;          /* Adjusts the spacing */
+    border-radius: 0.3rem;   /* Adjusts the border's roundness */
 }
-.navbar-header button.navbar-toggle{
-	clear:both;
-	margin-top: -50px; /*-30px; update by me to header space not to change in x-screen size*/
+.navbar-toggler {
+  background-color: #e0e0e0; /* Light gray background */
+  color: #333333; /* Dark gray for the icon/text */
+  border: 2px solid #b0b0b0; /* Medium gray border */
+
 }
+
+.navbar-toggler:hover {
+    background-color: #b0b0b0; /* Medium gray on hover */
+  color: #ffffff; /* White text/icon on hover */
+  border-color: #808080; /* Darker gray border on hover */
+/*  color: #FFD43B; #306998;*/
+}  
+
+.navbar-collapse {
+  justify-content: center; /* Center nav links when collapsed */
+}
+
+/* Dropdown Button */
+#languageDropdown {
+  background-color: #e0e0e0; /* Light gray background to match navbar-toggler */
+  color: #333333; /* Dark gray text for consistency */
+  border: 2px solid #b0b0b0; /* Medium gray border */
+}
+
+#languageDropdown:hover {
+  background-color: #b0b0b0; /* Medium gray on hover */
+  color: #ffffff; /* White text for hover contrast */
+  border-color: #808080; /* Darker gray border on hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #f5f5f5; /* Light background for the dropdown */
+  border: 1px solid #b0b0b0; /* Medium gray border */
+}
+
+.dropdown-menu a {
+  color: #333333; /* Dark gray link text for readability */
+}
+
+.dropdown-menu a:hover {
+  background-color: #306998; /* Blue highlight from the navigation list hover */
+  color: #ffffff; /* White text on hover to stand out */
+}
+
+.dropdown-menu a.active {
+  background-color: #ffd43b; /* Bright yellow for active menu items */
+  color: #ffffff; /* White text for contrast */
+}
+
 /* END HEADER */
 
 /* FOOTER */
 .panel-footer {
 	margin-top: 30px;
 	/*padding-top: 15px; /*35px;*/
-/*	padding-bottom: 35px;/*30px;*/
-background-color:#FFD43B ;
-border-top:0;
-padding: 0px 0px 35px 0px;
+	/*	padding-bottom: 35px;/*30px;*/
+	background-color: #FFD43B;
+	border-top: 0;
+	padding: 0px 0px 35px 0px;
 }
-.panel-footer div:nth-child(1){
-	background-color:#FFEB7D;
+
+.panel-footer div:nth-child(1) {
+	background-color: #FFEB7D;
 	margin: 0px;
 	padding-top: 10px;
 	padding-bottom: 15px;
 }
-.panel-footer hr{
+
+.panel-footer hr {
 	margin-top: 0px;
 }
-footer a{
+
+footer a {
 	margin: 0 20px;
-	font-size: 1.2em;
-	color:#333333 ;
+	font-size: 1em;
+	color: #333333;
 }
+
 footer a:hover {
-	color:#333333 ;
+	color: #808080;
 }
-#footer-note{
+
+#footer-note {
 	font-family: "Gloria Hallelujah", cursive;
 	color: #306998;
-	font-size: .9em;
-
+	font-size: .8rem;/*.875rem;*/
+	padding-top: 5px;
 }
+
 /* END FOOTER */
 
 /* CONTENT */
-
-h1, h2, h3 {
-	font-weight: bold; 
+h1,
+h2,
+h3 {
+	font-weight: bold;
 }
 
 h1 {
-	font-size: 2.5em; /* Adjust as needed */
+	font-size: 2.5rem;
+	/* Adjust as needed */
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 2rem;
 }
 
 h3 {
-	font-size: 1.75em;
+	font-size: 1.75rem;
 }
-section h3 a{
+
+section h3 a {
 	color: #335566;
+}
+section h3 a:hover{
+	color: #306998;
 }
 
 p {
-	font-size: 1em; /* Standard paragraph size */
+	font-size: 1rem;
+	/* Standard paragraph size */
 }
 
-#sec-note{
+#sec-note {
 	color: #335566;
 }
 
-#sec-note a,.sec>p>a,#a-email {
+#sec-note a,
+.sec>p>a,
+#a-email {
 	font-style: italic;
 }
 
-#note-title{
+#note-title {
 	font-size: 1.1em;
 	font-weight: bold;
 }
 
-#info-box{
-	margin-top: 20px;
+#info-box {
+	/*	margin-top: 10px;*/
 	position: relative;
 	border: 1px solid #333333;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
+	padding:15px;
 }
 
-#python-two-snakes{
-	display:block;
+#python-two-snakes {
+	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	width: 50px;
 	height: 63px;
 }
 
-#h2-python{
-	font-size: 1.5em;
+#h2-python {
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+#p-quick-facts {
+	font-size: 1.25rem;
 	text-align: center;
 	font-weight: bold;
 }
-#p-quick-facts{
-	font-size: 1.1em;
-	text-align: center;
-	font-weight: bold;
-}
+
 /* About */
-#sec-about{
-	width:70%;
+#sec-about {
+	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#about-me h2{
+#about-me h2 {
 	text-align: center;
 	margin-bottom: 20px;
+	margin-top:20px;
 }
 
-#image-container{
+#image-container {
 	margin-top: 40px;
 	box-shadow: 0 0 30px #333333;
-/*	border: 2px solid #333333;*/
+	/*	border: 2px solid #333333;*/
+	width: 100%;
+	background-size: contain;
+	overflow: hidden;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* END About */
 /* END CONTENT */
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 	/* Header */
-/*	#logo-img {
+	/*	#logo-img {
 		background: url('../images/python-logo-generic.svg') no-repeat;
 		width: 300px;
 		height: 80px;
 		margin: 5px 5px 5px 0;
 		background-size: contain;
 	}*/
-
 	/* End Header */
 }
 
@@ -207,20 +316,15 @@ p {
 		background: url('../images/python-logo-generic.svg') no-repeat;
 		width: 270px;
 		height: 80px;
-		margin: 5px 5px 5px 0;
+/*		margin: 5px 5px 5px 0;*/
+/*		margin: 10px 0px 0px 0px;*/
 		background-size: contain;
 	}
 
-	/*update new*/
-	.navbar-brand{
-		padding-top: 25px;
-
+	/* About */
+	#sec-about {
+		width: 83%;
 	}
-/* About */
-#sec-about{
-	width: 83%;
-}
-
 }
 
 /********** Extra small devices only **********/
@@ -230,44 +334,14 @@ p {
 		background: url('../images/python-logo-generic.svg') no-repeat;
 		width: 270px;
 		height: 80px;
-		margin: 5px 5px 5px 0;
+/*		margin: 5px 5px 5px 0;*/
+/*		margin: 10px 0px 0px 0px;*/
 		background-size: contain;
 	}
+	/* End Header */
 
-/*update -margin*/
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-	margin-left: -15px;
-}
-/*update new*/
-.navbar-brand{
-	padding-top: 25px;
-
-}
-/*  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }*/
-
-  #collapsable-nav a { /* Collapsed nav menu text */
-  	font-size: 1.2em;/*1.2em of 18px */
-  }
-
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
-  	font-size: 1em; /*1em of nav menu text */
-  	margin-right: 5px;
-  }
-/*update by me*/
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, 
-.container>.navbar-collapse, .container>.navbar-header {
-	margin-right: 0;  /*Reset the margin */
-	margin-left: 0;  /* Reset the margin */
-/* Add any other desired styles here */
-}
-/* End Header */
-
-/* About */
-#sec-about{
-	width: 100%;
-}
-
+	/* About */
+	#sec-about {
+		width: 100%;
+	}
 }
