@@ -332,13 +332,20 @@ img {
 	/* Header */
 	#logo-img {
 		background: url('../images/python-logo-generic.svg') no-repeat;
-		width: 270px;
-		height: 80px;
+		width: 230px; /*270px;*/
+		height: 68px; /*80px;*/
 /*		margin: 5px 5px 5px 0;*/
 /*		margin: 10px 0px 0px 0px;*/
 		background-size: contain;
 	}
 	/* End Header */
+
+	/* Home */
+	div.container-fluid{
+padding-left: 25px;
+padding-right: 25px;
+}
+/* End Home*/
 
 	/* About */
 	#sec-about {
