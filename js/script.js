@@ -83,6 +83,12 @@ document.addEventListener("DOMContentLoaded",
       setTimeout(collapseNavbar, 100); // Adjust the delay as needed
     });
 
+    // Handle click event on the navAboutButton
+    document.getElementById("navAboutButtonFooter")
+    .addEventListener("click", function(event) {
+      loadAbout(); // Call the loadAbout function
+    });
+
     // navbarToggle.addEventListener("blur", function(event) {
     //   console.log("blur "+!event.relatedTarget?.closest("#navAboutButton")) ;
     //   const screenWidth = window.innerWidth;
