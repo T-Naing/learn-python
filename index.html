@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Learn Python</title>
-  <!-- Add this to your <head> section -->
   <meta name="robots" content="index, follow">
 
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
@@ -15,52 +14,56 @@
   <link rel="manifest" href="images/favicon_io/site.webmanifest">
 
   <meta name="description"
-    content="Discover beginner-friendly resources to learn Python and data analytics, including courses, videos, and articles. Start coding today!">
+    content="Learn Python step-by-step with beginner-friendly tutorials, data analytics guides, and coding resources to start programming today!">
   <meta name="keywords"
-    content="Python, Data Analytics, learn Python, beginner Python, Python courses, coding, programming">
-  <link rel="canonical" href="https://t-naing.github.io/learn-python" />
+    content="Python tutorials, data analytics, learn Python, beginner programming, Python courses, coding resources">
+  <link rel="canonical" href="https://t-naing.github.io/learn-python">
 
-  <meta property="og:url" content="https://t-naing.github.io/learn-python" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Learn Python" />
-  <meta property="og:description" content="An awesome resource to learn Python programming." />
-  <meta property="og:image"
-    content="https://t-naing.github.io/learn-python/images/python-logo-master-v3-TM_centered.jpg" />
+  <meta property="og:url" content="https://t-naing.github.io/learn-python">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Learn Python">
+  <meta property="og:description" content="Step-by-step Python tutorials and resources for beginners in programming and data analytics.">
+  <meta property="og:image" content="https://t-naing.github.io/learn-python/images/python-logo-master-v3-TM_centered.jpg">
 
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Learn Python",
+    "description": "Beginner-friendly resources to learn Python, including tutorials and guides for data analytics.",
+    "url": "https://t-naing.github.io/learn-python/"
+  }
+  </script>
+
+  <!-- Bootstrap Icons (to ensure icons display properly) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+  <!-- Stylesheets -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="preload" as="style" href="css/styles.css" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Myanmar:wght@400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Myanmar:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- <header> -->
-  <nav class="navbar navbar-expand-sm "><!--navbar-light bg-light-->
-    <div class="container-fluid d-flex align-items-center"> <!--flex-nowrap causing weird toggle function 590px-->
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid d-flex align-items-center">
       <div class="navbar-brand p-2 flex-grow-1">
         <a class="d-inline-flex p-2" href="index.html">
-          <div id="logo-img" alt="logo image"></div>
+          <div id="logo-img" alt="Python logo"></div>
         </a>
       </div>
 
-      <!-- Language Selector (Always Visible) ms-auto pushes to right-->
       <div class="d-flex align-items-center ms-auto">
         <div id="globe" class="p-2">
           <i class="bi bi-globe"></i>
         </div>
         <div class="dropdown p-2">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown"
-            data-bs-toggle="dropdown" aria-expanded="false">
+          <button id="languageDropdown" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Language
           </button>
           <ul class="dropdown-menu" aria-labelledby="languageDropdown">
@@ -69,58 +72,51 @@
           </ul>
         </div>
 
-        <!-- Navbar Toggle Button -->
-        <button id="navbarToggle" class="navbar-toggler p-2" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"> </span>
+        <button id="navbarToggle" class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-
       </div>
 
       <div id="navbarNav" class="collapse navbar-collapse">
         <hr>
         <ul id="nav-list" class="navbar-nav mx-auto">
-          <li class="nav-item ">
+          <li class="nav-item">
             <a id="navHomeButton" class="nav-link active" aria-current="page" href="#">
               <i class="bi bi-house-door-fill"></i>
-              <br class="d-none d-sm-block" style="display: block;">
+              <br class="d-none d-sm-block">
               <span data-key="home-menu">Home</span>
             </a>
           </li>
           <li class="nav-item">
-            <a id="navAboutButton" class="nav-link" href="#"><!--loadAbout();-->
+            <a id="navAboutButton" class="nav-link" href="#">
               <i class="bi bi-info-circle-fill"></i>
-              <br class="d-none d-sm-block" style="display: block;">
-              <span data-key="about-menu">About</span></a>
+              <br class="d-none d-sm-block">
+              <span data-key="about-menu">About</span>
+            </a>
           </li>
         </ul>
       </div>
-
     </div>
   </nav>
-  <!-- </header> -->
 
   <div id="main-content" class="container-fluid">
     <noscript>
       <h1>Learn Python Programming</h1>
       <p>Complete Python tutorials for beginners...</p>
     </noscript>
-  </div><!--main-content-->
+  </div>
 
   <footer class="panel-footer">
-    <!-- <div class="container-fluid"> -->
     <div class="text-center">
       <a id="navHomeButtonFooter" href="#"><span data-key="home-menu">Home</span></a>
       <a id="navAboutButtonFooter" href="#"><span data-key="about-menu">About</span></a>
-    </div><!--rows-->
+    </div>
     <hr>
-    <div id="footer-note" class="text-center">&copy; 2024 Thit T. Naing. All Rights Reserved.
-      <!-- </div>container-->
+    <div id="footer-note" class="text-center">&copy; 2024 Thit T. Naing. All Rights Reserved.</div>
   </footer>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>
