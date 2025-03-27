@@ -1,13 +1,12 @@
 :root {
-  --base-font-size: 16px;
+  --base-font-size: 17px;
   --base-line-height: 1.6;
   --heading-margin-bottom: 10px;
-/*  --active-font-family: "Roboto", "Noto Sans Myanmar", serif;*/
 }
 
 /* When Myanmar font is active */
 .myanmar-font {
-  --base-font-size: 14px;
+  --base-font-size: 15px;
   --base-line-height: 2;
   --heading-margin-bottom: 25px;
 }
@@ -446,5 +445,4 @@ img {
 	#sec-about {
 		width: 100%;
 	}
-
 }

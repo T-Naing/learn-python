@@ -138,12 +138,14 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 
       if (selectedLang === 'en') {
         await loadContent("#main-content", selectedPage, selectedLang);
-        document.body.classList.remove('myanmar-font');
+        document.documentElement.classList.remove('myanmar-font'); // Must apply to <html>
+        console.log("Language toggle en");
       }
       else{
-        document.body.classList.add('myanmar-font');
+        document.documentElement.classList.add('myanmar-font'); // Must apply to <html>
+        console.log("Language toggle mm");
       }
-      console.log("Language toggle")
+      
       // Toggles: removes if present, adds if absent
       // document.body.classList.toggle('myanmar-font');
       const data = await loadLanguageData(selectedLang);
