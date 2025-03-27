@@ -71,8 +71,8 @@
           Language
         </button>
         <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-          <li><a class="dropdown-item" href="#">English</a></li>
-          <li><a class="dropdown-item" href="#">မြန်မာ</a></li>
+          <li><a class="dropdown-item" data-lang="en" href="#">English</a></li>
+          <li><a class="dropdown-item" data-lang="my" href="#">မြန်မာ</a></li>
         </ul>
       </div>
 
@@ -84,21 +84,21 @@
 
       </div>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div id="navbarNav" class="collapse navbar-collapse" >
         <hr>
         <ul id="nav-list" class="navbar-nav mx-auto">
           <li class="nav-item ">
-            <a id="navHomeButton" class="nav-link active" aria-current="page" href="index.html">
+            <a id="navHomeButton" class="nav-link active" aria-current="page" href="#">
               <i class="bi bi-house-door-fill"></i>
               <br class="d-none d-sm-block" style="display: block;">
-              Home
+              <span data-key="home-menu">Home</span>
             </a>
           </li>
           <li class="nav-item">
             <a id="navAboutButton" class="nav-link" href="#" ><!--loadAbout();-->
               <i class="bi bi-info-circle-fill"></i>
               <br class="d-none d-sm-block" style="display: block;">
-            About</a>
+            <span data-key="about-menu">About</span></a>
           </li>
         </ul>
       </div>
@@ -118,8 +118,8 @@
   <footer class="panel-footer">
     <!-- <div class="container-fluid"> -->
     <div class="text-center">
-      <a href="index.html">Home</a>
-      <a id="navAboutButtonFooter" href="#">About</a>
+      <a id="navHomeButtonFooter"href="#"><span data-key="home-menu">Home</span></a>
+      <a id="navAboutButtonFooter" href="#"><span data-key="about-menu">About</span></a>
     </div><!--rows-->
     <hr>
     <div id="footer-note" class="text-center">&copy; 2024 Thit T. Naing. All Rights Reserved.
@@ -128,9 +128,7 @@
 
   <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
   <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="js/script.js"></script> -->
-  <script src="js/script_revised.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

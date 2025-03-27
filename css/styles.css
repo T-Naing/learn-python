@@ -1,14 +1,30 @@
+:root {
+  --base-font-size: 16px;
+  --base-line-height: 1.6;
+  --heading-margin-bottom: 10px;
+/*  --active-font-family: "Roboto", "Noto Sans Myanmar", serif;*/
+}
+
+/* When Myanmar font is active */
+.myanmar-font {
+  --base-font-size: 14px;
+  --base-line-height: 2;
+  --heading-margin-bottom: 25px;
+}
+
 html {
-	font-size: 16px;
+/*	font-size: 16px;*/
 	/* 1rem root em*/
+	font-size: var(--base-font-size);
 }
 
 body {
 	color: #333333;
 	background-color: #F5F5F5;
 	font-family: "Roboto", "Noto Sans Myanmar", serif;
-	line-height: 1.6;
+/*	line-height: 1.6;*/
 	/* with font-size:16px*/
+  line-height: var(--base-line-height);
 }
 
 div.container-fluid {
@@ -226,6 +242,7 @@ footer a:hover {
 /* END FOOTER */
 
 /* CONTENT */
+/* HOME */
 h1,
 h2,
 h3 {
@@ -235,10 +252,12 @@ h3 {
 h1 {
 	font-size: 2.5rem;
 	/* Adjust as needed */
+	  margin-bottom: var(--heading-margin-bottom);
 }
 
 h2 {
 	font-size: 2rem;
+	  
 }
 
 h3 {
@@ -300,6 +319,7 @@ p {
 	text-align: center;
 	font-weight: bold;
 }
+/* END HOME */
 
 /* About */
 #sec-about {
@@ -312,6 +332,8 @@ p {
 	text-align: center;
 	margin-bottom: 5px;
 	margin-top: 10px;
+	margin-bottom: var(--heading-margin-bottom);
+
 }
 
 #image-container {
@@ -370,7 +392,7 @@ img {
 		background: url('../images/python-logo-generic.svg') no-repeat;
 		width: 230px;
 		height: 68px;
-		margin: 5px 5px 5px 0;
+		margin: 5px 0px 5px 0;
 		/*		margin: 10px 0px 0px 0px;*/
 		background-size: contain;
 	}

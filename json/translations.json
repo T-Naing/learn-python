@@ -1,0 +1,24 @@
+{
+  "en": {
+    "navHomeButton": "Home",
+    "navAboutButton": "About",
+    "title": "Start learning Python? Also as an analytics tool?",
+    "intro": "I've got a few resources that might help you! Sure, you can Google them...",
+    "paragraph1": "I'm just starting out myself, so this is all beginner-friendly...",
+    "pythonFacts": "Quick Facts:",
+    "designedBy": "Designed by:",
+    "developer": "Developer:",
+    "firstAppeared": "First appeared:"
+  },
+  "my": {
+    "navHomeButton": "ပင်မစာမျက်နှာ",
+    "navAboutButton": "ဤစာမျက်နှာအကြောင်း",
+    "title": "Python သင်တန်းစပါမလား? Analytics Tools အဖြစ်လည်း အသုံးပြုနိုင်ပါတယ်!",
+    "intro": "သင့်အား အကူအညီဖြစ်စေမည့် အရင်းအမြစ်များကို စုစည်းပေးထားပါတယ်...",
+    "paragraph1": "ကျွန်တော်ကိုယ်တိုင်စမောင်းခဲ့တာပါ၊ သင်တန်းများစဆင်းသူတွေအတွက် အဆင်ပြေပါလိမ့်မယ်...",
+    "pythonFacts": "အတိုချုပ် အချက်အလက်များ:",
+    "designedBy": "ဒီဇိုင်းသူ:",
+    "developer": "ဖန်တီးသူ:",
+    "firstAppeared": "ပထမဆုံး ပေါ်လာခဲ့သောနေ့:"
+  }
+}

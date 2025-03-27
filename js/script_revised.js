@@ -23,18 +23,20 @@ const showLoading = (selector) => {
 };
 
 // Function to load content from a URL
-const loadContent = async (url, selector) => {
-  showLoading(selector);
-  try {
-    const response = await fetch(url);
-    if (!response.ok) throw new Error("Network response was not ok.");
-    const html = await response.text();
-    insertHtml(selector, html);
-  } catch (error) {
-    console.error("Error loading content:", error);
-    insertHtml(selector, "<p>Failed to load content.</p>");
-  }
-};
+//using a traditional function declaration
+// async function loadContent(url, selector) {
+  const loadContent = async (url, selector) => {
+    showLoading(selector);
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error("Network response was not ok.");
+      const html = await response.text();
+      insertHtml(selector, html);
+    } catch (error) {
+      console.error("Error loading content:", error);
+      insertHtml(selector, "<p>Failed to load content.</p>");
+    }
+  };
 
 // Function to load the About page
 const loadAbout = () => {
