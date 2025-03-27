@@ -138,12 +138,14 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 
       if (selectedLang === 'en') {
         await loadContent("#main-content", selectedPage, selectedLang);
-        document.documentElement.style.fontSize = "16px"; // Sets font-size to 16px
-        document.body.style.lineHeight = "1.6"; // Sets line height
+        document.body.classList.remove('myanmar-font');
+      }
+      else{
+        document.body.classList.add('myanmar-font');
       }
       console.log("Language toggle")
       // Toggles: removes if present, adds if absent
-      document.body.classList.toggle('myanmar-font');
+      // document.body.classList.toggle('myanmar-font');
       const data = await loadLanguageData(selectedLang);
       if (data) {
         changeLanguage(data);
