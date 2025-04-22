@@ -7,4 +7,4 @@ Welcome to my very first web page! This site provides Python learning resources 
 - **Data analysis fundamentals**  
 
 ## Note  
-Unfortunately, some learning materials from [Jovian](https://jovian.ai/) now require payment. However, certain courses and some parts of the courses remain accessible for free.  
+Some of [Jovian](https://jovian.ai/)'s learning materials have transitioned to a paid model, though I couldn't find details on when this shift occurred. However, select courses and certain sections of existing courses remain freely accessible. This information was last revised on April 22, 2025.
